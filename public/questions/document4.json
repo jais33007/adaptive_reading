@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "text": "1.) What cognitive skills are strengthened by our use of computers and the Internet, according to the passage?",
+      "options": [
+        { "id": 1, "text": "Complex problem-solving and logical reasoning." },
+        { "id": 2, "text": "Visual-spatial skills, hand-eye coordination, and reflex response." },
+        { "id": 3, "text": "Critical thinking, imagination, and reflective analysis." },
+        { "id": 4, "text": "Language processing and communication skills." }
+        
+      ]
+    },
+
+
+    {
+        "id": 2,
+        "text":"2.) What did the study of video gaming reveal about the impact of action games on cognitive skills? ",
+        "options": [
+          { "id": 1, "text": "Action games enhance deep processing and mindful knowledge acquisition." },
+          { "id": 2, "text": "Action games improve reading skills and language comprehension." },
+          { "id": 3, "text": "Action games increase the speed of shifting visual focus and processing visual cues." },
+          { "id": 4, "text": "Action games boost memory retention and information recall." }
+
+        ]
+    },
+
+    {
+        "id": 3,
+        "text":"3.) What conclusion did Patricia Greenfield draw from her review of studies on the effects of media on intelligence and learning ability? ",
+        "options": [
+            { "id": 1, "text": "Media consumption enhances all cognitive skills equally." },
+            { "id": 2, "text": "Every medium develops specific cognitive skills at the expense of others." },
+            { "id": 3, "text": "Media usage has no significant impact on cognitive skills." },
+            { "id": 4, "text": "Cognitive skills are only affected by traditional learning methods, not media." }
+  
+          ]
+      },
+
+      {
+        "id": 4,
+        "text":"4.) What is the main concern regarding the impact of online habits on cognitive skills, as discussed in the passage?",
+        "options": [
+            { "id": 1, "text": "Online habits strengthen neural circuits for deep processing and critical thinking." },
+            { "id": 2, "text": "Online habits lead to the weakening of visual-spatial skills and hand-eye coordination." },
+            { "id": 3, "text": "Online habits reinforce skimming and multitasking while neglecting deep reading and" },
+            { "id": 4, "text": "Online habits have a temporary impact on cognitive skills without long-term consequences." }
+  
+          ]
+      }
+    
+]
+  

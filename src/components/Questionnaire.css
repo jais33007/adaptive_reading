@@ -1,0 +1,46 @@
+/* Questionnaire.css */
+
+.questionnaire-container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 22px;
+  }
+  
+  .question {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .submit-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-button a:hover {
+    background-color: #45a049;
+  }
+  

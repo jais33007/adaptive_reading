@@ -1,0 +1,79 @@
+[
+    {
+      "id": 1,
+      "text": "1.) How the desolanator works, The energy required to operate the Desolenator comes from sunlight. The device can be used in different locations, as it has 1 ......",
+      "type": "multiple-choice",
+      "options": [
+            { "id": 1, "text": "wheels" },
+            { "id": 2, "text": "tubes" },
+            { "id": 3, "text": "wires" },
+            { "id": 4, "text": "disk" }
+            
+          ]
+    },
+        
+    {
+        "text": "Water is fed into a pipe, and a 2....",
+        "type": "multiple-choice",
+        "options": [
+        { "id": 1, "text": "Motion" },
+        { "id": 2, "text": "film" },
+        { "id": 3, "text": "keeper" },
+        { "id": 4, "text": "tape" }
+          ]
+    },
+        
+    {
+    
+          "text": "of water flows over a solar panel. The water then enters a boiler, where it turns into steam. Any particles in the water are caught in a 3...",
+          "type": "multiple-choice",
+          "options": [
+            { "id": 1, "text": "cleaner" },
+            { "id": 2, "text": "filter" },
+            { "id": 3, "text": "extractor" },
+            { "id": 4, "text": "finer" }
+          ]
+    
+    },
+    
+
+    {
+        "id": 2,
+        "text": "2.) The purified water comes out through one tube, and all types of 4 ... ",
+        "type": "multiple-choice",
+        "options": [
+        { "id": 1, "text": "left over" },
+        { "id": 2, "text": "waste" },
+        { "id": 3, "text": "spoil" },
+        { "id": 4, "text": "trash" }
+        
+        ]
+    },
+        
+    {
+          "id": 202,
+          "text": "come out through another. A screen displays the 5...",
+          "type": "multiple-choice",
+          "options": [
+            { "id": 1, "text": "results" },
+            { "id": 2, "text": "performance" },
+            { "id": 3, "text": "practice" },
+            { "id": 4, "text": "outcome" }
+          ]
+    },
+        
+    {
+          "id": 203,
+          "text": "oof the device, and transmits the information to the company so that they know when the Desolenator requires 6...",
+          "type": "multiple-choice",
+          "options": [
+            { "id": 1, "text": "repairing" },
+            { "id": 2, "text": "preparing" },
+            { "id": 3, "text": "servicing" },
+            { "id": 4, "text": "fixing" }
+          ]
+    }
+      
+]
+    
+  

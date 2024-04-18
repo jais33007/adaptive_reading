@@ -1,0 +1,40 @@
+.frontpage-container {
+    text-align: center;
+    background: linear-gradient(45deg, #4d6db2, #f76767);
+    padding: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+  }
+  
+  .frontpage-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .frontpage-instructions {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .frontpage-button-link {
+    text-decoration: none;
+  }
+  
+  .frontpage-button {
+    background-color: #f76767; /* Coral color */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .frontpage-button:hover {
+    background-color: #ff4b4b; /* Lighter coral on hover */
+  }
+  

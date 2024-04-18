@@ -1,0 +1,44 @@
+/* Updated styling for the DocumentList component */
+.document-list {
+  max-width: 1000px;
+  margin: auto;
+  padding: 150px;
+  background-color: #b9b9af63; /* Light gray background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.document-list-title {
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #6b0a0a; /* Dark gray text color */
+}
+
+.document-list-items {
+  list-style: none;
+  padding: 0;
+}
+
+.document-item {
+
+  
+  margin-bottom: 20px; 
+}
+
+.document-link {
+  display: block;
+  padding: 10px;
+  background-color: #0a5f97; /* Blue background */
+  color: #fff; /* White text color */
+  text-decoration: none;
+  border-radius: 30px; /* Rounded corners */
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.document-link:hover {
+  background-color: #062b43; /* Slightly darker blue on hover */
+}
+

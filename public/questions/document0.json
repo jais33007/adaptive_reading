@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "text": "1.) The author of Passage mentions several companies primarily to",
+      "options": [
+        { "id": 1, "text": "note the technological advances that make space mining possible." },
+        { "id": 2, "text": "provide evidence of the growing interest in space mining." },
+        { "id": 3, "text": "emphasize the large profits to be made from space mining." },
+        { "id": 4, "text": "highlight the diverse ways to carry out space mining operations." }
+        
+      ]
+    },
+
+
+    {
+        "id": 2,
+        "text":"2.) The author of Passage indicates that space mining could have which positive effect?.",
+        "options": [
+          { "id": 1, "text": "It could yield materials important to Earth’s economy." },
+          { "id": 2, "text": "It could raise the value of some precious metals on Earth." },
+          { "id": 3, "text": "It could create unanticipated technological innovations." },
+          { "id": 4, "text": "It could change scientists’ understanding of space resources." }
+
+        ]
+    },
+
+    {
+        "id": 3,
+        "text":"3.) Which choice provides the best evidence for the answer to the previous question?",
+        "options": [
+            { "id": 1, "text": "Lines 11-13 (“Within... lanthanum”)" },
+            { "id": 2, "text": "Lines 14-16 (“They... projects”)" },
+            { "id": 3, "text": "Lines 17 (“In this... commodity”)" },
+            { "id": 4, "text": "Lines 23-24 (“Companies... machinery”)" }
+  
+          ]
+      },
+
+      {
+        "id": 4,
+        "text":"4.) What function does the discussion of water in lines 20-22 serve in Passage?",
+        "options": [
+            { "id": 1, "text": "It continues an extended comparison that begins in the previous paragraph." },
+            { "id": 2, "text": "It provides an unexpected answer to a question raised in the previous paragraph." },
+            { "id": 3, "text": "It offers hypothetical examples supporting a claim made in the previous paragraph." },
+            { "id": 4, "text": "It examines possible outcomes of a proposal put forth in the previous paragraph." }
+  
+          ]
+      }
+    
+]
+  

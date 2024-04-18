@@ -1,0 +1,8 @@
+# Introduction to Basic Mathematics
+
+Welcome to the world of mathematics! In this introductory course, we will explore fundamental concepts that form the basis of all mathematical understanding. 
+Mathematics is the language of numbers, shapes, and patterns, and it surrounds us in our everyday lives.
+Let's start with numbers. Numbers are used to count and measure quantities. They can be whole numbers like 1, 2, 3, or fractions like 1/2, 3/4. We use symbols like + (plus), - (minus), × (times), and ÷ (divided by) to perform operations with numbers. Addition combines numbers, subtraction takes away, multiplication repeats addition, and division splits a quantity into equal parts.
+
+Shapes are another essential aspect of mathematics. We encounter shapes everywhere, from simple circles and squares to complex polygons and spheres. Each shape has unique properties that we can study and understand using mathematical principles. By learning about shapes, we can explore concepts like area, perimeter, volume, and angles.
+Finally, patterns play a crucial role in mathematics. Patterns help us identify relationships and predict outcomes. Whether it's recognizing the sequence of numbers or finding repeating designs, understanding patterns allows us to solve problems and make predictions. Throughout this course, we will delve deeper into these concepts and discover the beauty and power of mathematics.
