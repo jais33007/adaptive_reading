@@ -1,11 +1,18 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, json
 import pandas as pd
 from keras.models import load_model
 import numpy as np
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+# CORS(app, origins=['http://localhost:3000']) 
+cors = CORS(app, resources={r"/predict_engagement": {"origins": "http://localhost:3000"}})
+print("CORS Configuration:", cors.__dict__)  # Log CORS configuration
+
 
 model = load_model('eng_model.h5')
+# print(model.summary())
+
 
 def get_frames(df, frame_size, hop_size):
     N_FEATURES = len(df.columns)
@@ -44,24 +51,49 @@ def prepare_data(data):
     x_val = x_val.astype("float32")
     return x_val    
 
+
+
 @app.route('/predict_engagement', methods=['POST'])
 def predict_engagement():
-    content = request.json
-    gaze_data = content['gazeData']
-    fixation_data = content['fixationData']
+    if not request.json:
+        return jsonify({'error': 'Missing JSON data'}), 400
 
-    df = pd.DataFrame({
-        'gazeX': [gaze_data['gazeX']],
-        'gazeY': [gaze_data['gazeY']],
-        'fixations': [fixation_data['fixations']]
-    })
+    # print("Data Retrieved:", request.json)  # Log request headers
 
-    processed_data = prepare_data(df)
-    score = model.predict(processed_data)
-    engagement_score = np.argmax(score, axis=1)
+    try:
+        data = request.json
+        print (data)
 
-    print (engagement_score)
-    return jsonify({'engagement_score': engagement_score})
+        fixation_data = data['fixationData']['fixations']
+
+        # Extract relevant features from fixation data (excluding timestamp)
+        gaze_x = [fix[1] for fix in fixation_data]
+        gaze_y = [fix[2] for fix in fixation_data]
+        fixation_duration = [fix[3] for fix in fixation_data]
+
+        # Create DataFrame from the extracted fixation data
+        df = pd.DataFrame({'gazeX': gaze_x, 'gazeY': gaze_y, 'fixationDuration': fixation_duration})
+        print (df)
+
+        input_data = np.array(df)
+        desired_shape = (1, 256, 3)
+        padded_input_data = np.zeros(desired_shape)
+
+        padded_input_data[:, :input_data.shape[0], :] = input_data
+        print (padded_input_data.shape)
+        reshaped_array = feature_normalize(padded_input_data.reshape(-1, 768))
+
+        score = model.predict(reshaped_array)
+        print (score)
+        engagement_score = np.argmax(score, axis=1)
+
+        print ('Engagement-Score:',engagement_score.item())
+
+        return jsonify({'success': True, 'engagementScore': engagement_score.item()}), 200
+    
+    except Exception as e:
+        print("Error:", e)
+        return jsonify({'error': 'Internal Server Error'}), 500
 
 if __name__ == '__main__':
     app.run(debug=True, port=8000)

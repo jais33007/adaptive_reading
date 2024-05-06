@@ -6,14 +6,13 @@ import axios from 'axios'; // For potential future external API interaction (opt
 import { summarizeParagraph } from '../services/summarizationAPI'; // Import for backend API calls
 import { GazeView } from '../services/gaze_view'
 
-const Document = () => {
+const Document = ({ engagementScore, eyeTrackingEnabled, toggleEyeTracking, updateEngagementScore }) => {
   const { id } = useParams();
   const [documentContent, setDocumentContent] = useState('');
-  const [eyeTrackingEnabled, setEyeTrackingEnabled] = useState(false);
+  // const [eyeTrackingEnabled, setEyeTrackingEnabled] = useState(false);
   const [selectedParagraph, setSelectedParagraph] = useState(null);
   const [paragraphSummary, setParagraphSummary] = useState(''); // State to store paragraph summary
 
-  // Simulated function (replace with actual API call if needed)
   const fetchMarkdownContent = async (id) => {
     try {
       const response = await fetch(`/document${id}.md`);
@@ -25,9 +24,9 @@ const Document = () => {
     }
   };
 
-  const handleToggleEyeTracking = () => {
-    setEyeTrackingEnabled(!eyeTrackingEnabled);
-  };
+  // const handleToggleEyeTracking = () => {
+  //   setEyeTrackingEnabled(!eyeTrackingEnabled);
+  // };
 
   const handleParagraphClick = (paragraph) => {
     setSelectedParagraph(paragraph);
@@ -87,8 +86,11 @@ const Document = () => {
             </p>
           ))}
         </div>
-        <button className={`eye-tracking-button ${eyeTrackingEnabled? 'enabled' : 'disabled'}`} onClick={() => setEyeTrackingEnabled(!eyeTrackingEnabled)}>
+        {/* <button className={`eye-tracking-button ${eyeTrackingEnabled? 'enabled' : 'disabled'}`} onClick={() => setEyeTrackingEnabled(!eyeTrackingEnabled)}>
           {eyeTrackingEnabled? 'Disable Eye Tracking' : 'Enable Eye Tracking'}
+        </button> */}
+        <button className={`eye-tracking-button ${eyeTrackingEnabled ? 'enabled' : 'disabled'}`} onClick={toggleEyeTracking}>
+          {eyeTrackingEnabled ? 'Disable Eye Tracking' : 'Enable Eye Tracking'}
         </button>
         <Link to={`/questionnaire/${id}`} className="proceed-button" onClick={handleProceedToQuestionnaire}>
           Proceed to Questionnaire
@@ -100,7 +102,7 @@ const Document = () => {
           <p>{paragraphSummary}</p>
         </div>
       )}
-      {eyeTrackingEnabled && <GazeView />}
+      {eyeTrackingEnabled && <GazeView updateEngagementScore={updateEngagementScore} />}
     </>
   );
 };

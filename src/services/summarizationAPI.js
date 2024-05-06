@@ -8,7 +8,7 @@ const summarizeParagraph = async (paragraph) => {
     return response.data.summary;
   } catch (error) {
     console.error('Error summarizing paragraph:', error);
-    return '';  
+    return '';  // Handle errors gracefully (e.g., display an error message)
   }
 };
 

@@ -12,31 +12,14 @@ const DocumentList = () => {
                      '3.) Advanced Quantum Mechanics: Schrödinger Equation and Wave functions'];
   const navigate = useNavigate(); // Get the history object for navigation
 
-  const [gazeData, setGazeData] = useState(null);
-
-  useEffect(() => {
-    const ws = new WebSocket('ws://localhost:8765/gaze/raw/');
-
-    ws.onopen = () => {
-      console.log('WebSocket connected');
-    };
-
-    ws.onmessage = (event) => {
-      const data = JSON.parse(event.data);
-      setGazeData(data); // Update state with gaze data
-    };
-
-    return () => {
-      ws.close();
-    };
-  }, []);
-
   // Function to handle the click event on a document link
   const HandleDocumentClick = async (documentIndex) => {
     try {
       
         await axios.get('http://localhost:8765/recording/start/');
         await axios.get('http://localhost:8765/recording/capture/')
+
+        console.log('Recording started');
         
     } 
     catch (error) {
@@ -59,12 +42,12 @@ return (
         </li>
       ))}
     </ul>
-    {gazeData && (
+    {/* {gazeData && (
         <div className="gaze-data">
           <h2>Gaze Data</h2>
           <pre>{JSON.stringify(gazeData, null, 2)}</pre>
         </div>
-      )}
+      )} */}
   </div>
   );
 };
