@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import './Questionnaire.css'; // Import the stylesheet
+// import './Questionnaire.css'; // Import the stylesheet
 
 const Questionnaire = () => {
   const { id } = useParams();

@@ -46,7 +46,7 @@ def summarize():
     response = openai.Completion.create(
     engine="babbage-002" ,
     prompt=paragraph,
-    max_tokens=70,  
+    max_tokens=80,  
     temperature=0.5, 
     stop=["\n"]
     )

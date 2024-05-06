@@ -1,4 +1,3 @@
-# Advanced Quantum Mechanics: Schrödinger Equation and Wave functions
 
 Welcome to the realm of advanced quantum mechanics, where we delve into the profound mysteries of the subatomic world. At the heart of quantum mechanics lies the Schrödinger equation, a fundamental equation that governs the behavior of quantum systems. Developed by Austrian physicist Erwin Schrödinger in 1926, this equation revolutionized our understanding of particle dynamics.
 

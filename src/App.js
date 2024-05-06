@@ -4,6 +4,7 @@ import FrontPage from './components/FrontPage';
 import DocumentList from './components/DocumentList';
 import Parent from './components/Parent';
 import Questionnaire from './components/Questionnaire';
+import Survey from './components/Survey'
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
         <Route path="/" element={<FrontPage />} />
         <Route path="/documents" element={<DocumentList />} />
         <Route path="/documents/:id" element={<Parent />} />
-        <Route path="/questionnaire/:id" element={<Questionnaire />} />
+        <Route path="/survey" element={<Survey />} />
       </Routes>
     </Router>
   );

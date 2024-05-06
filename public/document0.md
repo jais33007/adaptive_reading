@@ -1,4 +1,3 @@
-# Introduction to Basic Mathematics
 
 Welcome to the world of mathematics! In this introductory course, we will explore fundamental concepts that form the basis of all mathematical understanding. 
 Mathematics is the language of numbers, shapes, and patterns, and it surrounds us in our everyday lives.

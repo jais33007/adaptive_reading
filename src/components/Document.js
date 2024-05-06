@@ -24,10 +24,6 @@ const Document = ({ engagementScore, eyeTrackingEnabled, toggleEyeTracking, upda
     }
   };
 
-  // const handleToggleEyeTracking = () => {
-  //   setEyeTrackingEnabled(!eyeTrackingEnabled);
-  // };
-
   const handleParagraphClick = (paragraph) => {
     setSelectedParagraph(paragraph);
   };
@@ -86,14 +82,11 @@ const Document = ({ engagementScore, eyeTrackingEnabled, toggleEyeTracking, upda
             </p>
           ))}
         </div>
-        {/* <button className={`eye-tracking-button ${eyeTrackingEnabled? 'enabled' : 'disabled'}`} onClick={() => setEyeTrackingEnabled(!eyeTrackingEnabled)}>
-          {eyeTrackingEnabled? 'Disable Eye Tracking' : 'Enable Eye Tracking'}
-        </button> */}
         <button className={`eye-tracking-button ${eyeTrackingEnabled ? 'enabled' : 'disabled'}`} onClick={toggleEyeTracking}>
           {eyeTrackingEnabled ? 'Disable Eye Tracking' : 'Enable Eye Tracking'}
         </button>
-        <Link to={`/questionnaire/${id}`} className="proceed-button" onClick={handleProceedToQuestionnaire}>
-          Proceed to Questionnaire
+        <Link to={`/survey/`} className="proceed-button" onClick={handleProceedToQuestionnaire}>
+          Proceed to Survey
         </Link>
       </div>
       {selectedParagraph && (

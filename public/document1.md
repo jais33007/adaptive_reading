@@ -1,4 +1,3 @@
-# Intermediate French Grammar: Verb Conjugation
 
 
 Bienvenue! Welcome to the intermediate French grammar course focusing on verb conjugation. Verbs are the backbone of any language, and mastering their conjugation is essential for fluency. In this module, we will delve into the intricacies of conjugating verbs in different tenses and moods.

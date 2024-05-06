@@ -1,23 +1,26 @@
-/* Questionnaire.css */
 
-.questionnaire-container {
+.survey-container {
     max-width: 1400px;
     margin: auto;
-    padding: 20px;
+    padding: 0px;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-size: 22px;
+    font-size: 20px;
   }
   
-  .question {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
+.question {
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+}
+
+.radio-label {
+  margin-right: 20px;
+}
+
   
   select {
     width: 100%;
@@ -32,12 +35,13 @@
   
   .submit-button a {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 20px 30px;
     background-color: #4caf50;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 20px;
   }
   
   .submit-button a:hover {
