@@ -86,10 +86,24 @@ def predict_engagement():
         score = model.predict(reshaped_array)
         print (score)
         engagement_score = np.argmax(score, axis=1)
+        engagement_score = engagement_score.item()
 
-        print ('Engagement-Score:',engagement_score.item())
+        for duration in fixation_duration:
+            if duration < 100:
+                engagement_score = 0  # Decrease engagement score
 
-        return jsonify({'success': True, 'engagementScore': engagement_score.item()}), 200
+        # Example criteria: If gaze positions are outside a specific range, decrease engagement score
+        for x, y in zip(gaze_x, gaze_y):
+            if x < 0 or x > 1420 or y < 0 or y > 1080:
+                engagement_score = 0  # Decrease engagement score
+
+        # Ensure engagement score is within a certain range
+        # engagement_score = max(0, min(10, engagement_score))  # Ensure score is between 0 and 10
+
+
+        print ('Engagement-Score:',engagement_score)
+
+        return jsonify({'success': True, 'engagementScore': engagement_score}), 200
     
     except Exception as e:
         print("Error:", e)
