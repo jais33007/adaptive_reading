@@ -89,7 +89,7 @@ const Document = ({ engagementScore, eyeTrackingEnabled, toggleEyeTracking, upda
           Proceed to Survey
         </Link>
       </div>
-      {selectedParagraph && (
+      {selectedParagraph && engagementScore===1 &&(
         <div className="paragraph-summary">
           <h3>Summary</h3>
           <p>{paragraphSummary}</p>
