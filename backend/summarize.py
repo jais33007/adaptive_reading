@@ -44,7 +44,7 @@ def summarize():
 
         # Use OpenAI ChatGPT API for summarization
     response = openai.Completion.create(
-    engine="babbage-002" ,
+    engine="gpt-3.5-turbo" ,
     prompt=paragraph,
     max_tokens=80,  
     temperature=0.5, 
