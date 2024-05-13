@@ -42,20 +42,21 @@ def summarize():
     paragraph = data.get('paragraph')
     print (paragraph)
 
-        # Use OpenAI ChatGPT API for summarization
+    target_sentences = 3
+    target_tokens_per_sentence = 25  # Adjust as needed
+    max_tokens = target_sentences * target_tokens_per_sentence
+    
     response = openai.Completion.create(
-    engine="gpt-3.5-turbo" ,
+    engine="babbage-002",
     prompt=paragraph,
-    max_tokens=80,  
-    temperature=0.5, 
+    max_tokens=max_tokens, 
+    temperature=0.6, 
     stop=["\n"]
     )
+    
     summary = response.choices[0].text
-    #print(summary)
 
     return jsonify({'summary': summary})
-    # except Exception as e:
-    #     return jsonify({'error': str(e)}), 500  # Return error message and status code
 
 if __name__ == '__main__':
-    app.run(debug=True)  # Run the Flask app in debug mode
+    app.run(debug=True)  

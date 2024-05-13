@@ -1,18 +1,21 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'
-import './DocumentList.css'; // Import the stylesheet
-//import EyeTrackerWrapper from './EyeTrackerWrapper'; // Import the EyeTrackerWrapper component
+import './DocumentList.css'; 
 import axios from 'axios'
-import { useState, useEffect } from 'react';
-
 
 const DocumentList = () => {
   const documents = ['1.) Introduction to Basic Mathematics',
                      '2.) Intermediate French Grammar: Verb Conjugation',
-                     '3.) Advanced Quantum Mechanics: Schrödinger Equation and Wave functions'];
-  const navigate = useNavigate(); // Get the history object for navigation
+                     '3.) Advanced Quantum Mechanics: Schrödinger Equation and Wave functions',
+                     '4.) Quantum Entanglement in Non-Euclidean Spacetime Metrics',
+                     '5.) Bayesian Inference for Complex Dynamical Systems with Sparse Observations',
+                     '6.) The Science of Sleep',
+                     '7.) Quantum Gravity: Unifying General Relativity and Quantum Mechanics',
+                     '8.) The Psychology of Decision Making',
+                     '9.) The Impact of Social Media on Mental Health',
+                     '10.) The Importance of Biodiversity in Ecosystems'];
+  const navigate = useNavigate(); 
 
-  // Function to handle the click event on a document link
   const HandleDocumentClick = async (documentIndex) => {
     try {
       
@@ -24,7 +27,6 @@ const DocumentList = () => {
     } 
     catch (error) {
       console.error('API Request Error:', error);
-      // Handle the error as needed (e.g., display an error message to the user)
     }
     navigate(`/documents/${documentIndex}`);
   };
@@ -42,12 +44,6 @@ return (
         </li>
       ))}
     </ul>
-    {/* {gazeData && (
-        <div className="gaze-data">
-          <h2>Gaze Data</h2>
-          <pre>{JSON.stringify(gazeData, null, 2)}</pre>
-        </div>
-      )} */}
   </div>
   );
 };

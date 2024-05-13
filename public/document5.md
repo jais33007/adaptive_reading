@@ -1,41 +1,9 @@
-# Document 5
+Sleep is a universal phenomenon that affects every aspect of our lives, yet its mechanisms remain shrouded in mystery. From the stages of sleep to the importance of dreams, exploring the science behind our nightly slumber can provide fascinating insights into the workings of the brain and body. Discovering how sleep influences our memory, mood, and overall health offers valuable knowledge that can empower us to prioritize rest and optimize our well-being.
 
-Some of the largest ocean waves in the world are nearly impossible to see. Unlike other large
-waves, these rollers, called internal waves, do not ride the ocean surface. Instead, they move
-underwater, undetectable without the use of satellite imagery or sophisticated monitoring
-equipment. Despite their hidden nature, internal waves are fundamental parts of ocean water
-dynamics, transferring heat to the ocean depths and bringing up cold water from below. And
-they can reach staggering heights—some as tall as skyscrapers. Because these waves are
-involved in ocean mixing and thus the transfer of heat, understanding them is crucial to global
-climate modeling, says Tom Peacock, a researcher at the Massachusetts Institute of
-Technology. Most models fail to take internal waves into account. “If we want to have more and
-more accurate climate models, we have to be able to capture processes such as this,” Peacock
-says. Peacock and his colleagues tried to do just that. Their study, published in November in
-Geophysical Research Letters, focused on internal waves generated in the Luzon Strait, which
-separates Taiwan and the Philippines. Internal waves in this region, thought to be some of the
-largest in the world, can reach about 500 meters high. “That’s the same height as the Freedom
-Tower that’s just been built in New York,” Peacock says. Although scientists knew of this
-phenomenon in the South China Sea and beyond, they didn’t know exactly how internal waves
-formed. To find out, Peacock and a team of researchers from M.I.T. and Woods Hole
-Oceanographic Institution worked with France’s National Center for Scientific Research using a
-giant facility there called the Coriolis Platform. The rotating platform, about 15 meters (49.2 feet)
-in diameter, turns at variable speeds and can simulate Earth’s rotation. It also has walls, which
-means scientists can fill it with water and create accurate, large-scale simulations of various
-oceanographic scenarios. Peacock and his team built a carbon-fiber resin scale model of the
-Luzon Strait, including the islands and surrounding ocean floor topography. Then they filled the
-platform with water of varying salinity to replicate the different densities found at the strait, with
-denser, saltier water below and lighter, less briny water above. Small particles were added to
-the solution and illuminated with lights from below in order to track how the liquid moved. Finally,
-they re-created tides using two large plungers to see how the internal waves themselves
-formed. The Luzon Strait’s underwater topography, with a distinct double-ridge shape, turns out
-to be responsible for generating the underwater waves. As the tide rises and falls and water
-moves through the strait, colder, denser water is pushed up over the ridges into warmer, less
-dense layers above it. This action results in bumps of colder water trailed by warmer water that
-generate an internal wave. As these waves move toward land, they become steeper—much the
-same way waves at the beach become taller before they hit the shore—until they break on a
-continental shelf. The researchers were also able to devise a mathematical model that
-describes the movement and formation of these waves. Whereas the model is specific to the
-Luzon Strait, it can still help researchers understand how internal waves are generated in other
-places around the world. Eventually, this information will be incorporated into global climate
-models, making them more accurate. “It’s very clear, within the context of these [global climate]
-models, that internal waves play a role in driving ocean circulations,” Peacock says.
+Sleep is typically divided into non-rapid eye movement (NREM) sleep and rapid eye movement (REM) sleep, each characterized by distinct brain wave patterns and physiological changes. Investigating the transitions between these stages and the duration of each stage provides valuable insights into the quality and restorative nature of sleep.
+
+Another important aspect of sleep research is understanding the functions of sleep. While the exact purpose of sleep remains a subject of debate, scientists have identified several essential functions, including memory consolidation, cognitive processing, and emotional regulation. Studying how sleep influences learning, memory formation, and problem-solving helps uncover the mechanisms through which the brain processes and stores information during rest.
+
+The science of sleep encompasses the study of sleep disorders, such as insomnia, sleep apnea, and narcolepsy, which can significantly impact an individual's health and quality of life. By investigating the underlying causes and treatments for these disorders, researchers aim to improve diagnostic methods and develop effective interventions to alleviate sleep disturbances and promote better sleep health.
+
+Overall, the science of sleep offers a multifaceted exploration of one of the most fundamental aspects of human biology. By unraveling the mysteries of sleep, researchers hope to unlock new insights into brain function, mental health, and overall well-being, ultimately leading to advancements in sleep medicine and the promotion of healthier sleep habits for individuals and society as a whole.

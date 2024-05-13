@@ -1,50 +1,50 @@
+/* survey.css */
 
 .survey-container {
-    max-width: 1400px;
-    margin: auto;
-    padding: 0px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-size: 20px;
-  }
-  
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+}
+
 .question {
   margin-bottom: 20px;
 }
 
 .options {
   display: flex;
+  flex-wrap: wrap; 
 }
 
 .radio-label {
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
-  
-  select {
-    width: 100%;
-    padding: 8px;
-    font-size: 16px;
-  }
-  
-  .submit-button {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .submit-button a {
-    display: inline-block;
-    padding: 20px 30px;
-    background-color: #4caf50;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 20px;
-  }
-  
-  .submit-button a:hover {
-    background-color: #45a049;
-  }
-  
+.radio-label input {
+  margin-right: 15px; 
+}
+
+.submit-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.styled-button {
+  background-color: #31a461;
+  color: #fff;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+  background-color: #218c54;
+}
+
