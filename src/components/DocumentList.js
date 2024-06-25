@@ -34,7 +34,7 @@ const DocumentList = () => {
 
 return (
   <div className="document-list">
-    <h1 className="document-list-title">Adaptive comprehension : Select a Document</h1>
+    <h1 className="document-list-title">Adaptive Comprehension : Select a Document</h1>
     <ul className="document-list-items">
       {documents.map((doc, index) => (
         <li key={index} className="document-item">

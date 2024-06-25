@@ -1,44 +1,49 @@
-/* Updated styling for the DocumentList component */
 .document-list {
-  max-width: 1000px;
+  max-width: 1500px;
   margin: auto;
-  padding: 150px;
-  background-color: #b9b9af63; /* Light gray background */
+  padding: 145px;
+  background-color: #9971634a; 
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   text-align: left;
 }
 
 .document-list-title {
-  font-size: 44px;
+  font-size: 54px;
   font-weight: bold;
-  margin-bottom: 50px;
-  color: #6b0a0a; /* Dark gray text color */
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 5px;
+  color: #6b0a0a; 
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #be51296e; 
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 .document-list-items {
   list-style: none;
-  padding: 0;
+  padding: 20px;
 }
 
 .document-item {
-
-  
   margin-bottom: 20px; 
 }
 
 .document-link {
   display: block;
   padding: 10px;
-  background-color: #0a5f97; /* Blue background */
-  color: #fff; /* White text color */
+  background-color: #0a5f97; 
+  color: #fff; 
   text-decoration: none;
-  border-radius: 30px; /* Rounded corners */
-  font-size: 18px;
-  transition: background-color 0.3s ease;
+  border-radius: 15px; 
+  font-size: 24px;
+  transition: background-color 0.1s ease;
 }
 
 .document-link:hover {
-  background-color: #062b43; /* Slightly darker blue on hover */
+  background-color: #062b43; 
 }
 

@@ -67,7 +67,7 @@ const Survey = () => {
   return (
     <div className="survey-container">
       <h2>Survey Questions</h2>
-      <h4>(1= strongly disagree, 7 =strongly agree)</h4>
+      <h4>(1 = not at all, 7 = extremely)</h4>
       <form onSubmit={handleSubmit}>
         {surveyQuestions.map((questionObj, index) => (
           <div key={index} className="question">
