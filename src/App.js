@@ -4,7 +4,8 @@ import FrontPage from './components/FrontPage';
 import DocumentList from './components/DocumentList';
 import Parent from './components/Parent';
 import Questionnaire from './components/Questionnaire';
-import Survey from './components/Survey'
+import Survey from './components/Survey';
+import ComprehensionQuestions from './components/ComprehensionQuestions';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Route path="/" element={<FrontPage />} />
         <Route path="/documents" element={<DocumentList />} />
         <Route path="/documents/:id" element={<Parent />} />
+        <Route path="/documents/:id/questions" element={<ComprehensionQuestions />} />
         <Route path="/survey" element={<Survey />} />
       </Routes>
     </Router>

@@ -16,7 +16,8 @@
 
 .options {
   display: flex;
-  flex-wrap: wrap; 
+  flex-direction: row;
+ 
 }
 
 .radio-label {

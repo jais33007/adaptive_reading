@@ -4,16 +4,16 @@ import './DocumentList.css';
 import axios from 'axios'
 
 const DocumentList = () => {
-  const documents = ['1.) Introduction to Basic Mathematics',
-                     '2.) Intermediate French Grammar: Verb Conjugation',
-                     '3.) Advanced Quantum Mechanics: Schrödinger Equation and Wave functions',
-                     '4.) Quantum Entanglement in Non-Euclidean Spacetime Metrics',
-                     '5.) Bayesian Inference for Complex Dynamical Systems with Sparse Observations',
-                     '6.) The Science of Sleep',
-                     '7.) Quantum Gravity: Unifying General Relativity and Quantum Mechanics',
-                     '8.) The Psychology of Decision Making',
-                     '9.) The Impact of Social Media on Mental Health',
-                     '10.) The Importance of Biodiversity in Ecosystems'];
+  const documents = ['1.) Recent Advances in Artificial Intelligence',
+                     '2.) Breakthroughs in Renewable Energy',
+                     '3.) The Impact of Social Media on Mental Health',
+                     '4.) An Analysis of the Gender Pay Gap',
+                     '5.) A Study on the Effects of Climate Change on Biodiversity',
+                     '6.) The Impact of COVID-19 on Global Economies',
+                     '7.) The Future of Space Exploration',
+                     '8.) A Review of Machine Learning Algorithms',
+                     '9.) The Ethics of Gene Editing',
+                     '10.) The Rise of Sustainable Fashion'];
   const navigate = useNavigate(); 
 
   const HandleDocumentClick = async (documentIndex) => {

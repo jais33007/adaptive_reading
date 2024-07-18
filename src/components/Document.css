@@ -34,17 +34,17 @@
     margin-left: 10px; /* Adjust as needed */
   }
   
-  .paragraph-summary {
+  /* .paragraph-summary {
     position: absolute;
       left: 100px; 
-      margin-left: 1040px; 
-      margin-top: -950px;
+      margin-left: 1500px; 
+      margin-top: -2050px;
       margin-right: 50px;
       background-color: #7ea57c;
-      padding: 30px; 
+      padding: 20px; 
       border-radius: 30px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+  } */
   
   .proceed-button {
     display: inline-block;

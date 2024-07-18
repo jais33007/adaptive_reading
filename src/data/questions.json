@@ -1,0 +1,415 @@
+[
+  {
+    "id": 0,
+    "questions": [
+      {
+        "question": "What key development factors have driven the transformation of AI from a speculative concept to a critical technology in modern times?",
+        "options": [
+          "A. Advances in quantum computing and blockchain technology",
+          "B. The availability of massive datasets, computational power, and algorithmic advancements",
+          "C. Innovations in hardware design and mobile technology",
+          "D. Increased global connectivity and the rise of social media platforms"
+        ]
+      },
+      {
+        "question": "Which of the following best describes the distinction between CNNs and RNNs within the context of neural networks?",
+        "options": [
+          "A. CNNs are primarily used for natural language processing, while RNNs excel in image and video analysis.",
+          "B. CNNs use layered structures for image and video analysis, whereas RNNs process sequential data and natural language.",
+          "C. RNNs are designed for real-time data processing, whereas CNNs focus on historical data analysis.",
+          "D. CNNs are suitable for unsupervised learning tasks, whereas RNNs are exclusively for supervised learning tasks."
+        ]
+      },
+      {
+        "question": "Which of the following correctly identifies a significant ethical consideration in the deployment of AI systems mentioned in the text?",
+        "options": [
+          "A. The economic cost of implementing AI technologies",
+          "B. The transparency, accountability, and fairness of AI systems",
+          "C. The potential for AI to outperform human intelligence in all areas",
+          "D. The environmental impact of AI hardware production"
+        ]
+      },
+      {
+        "question": "What future applications of AI are highlighted in the text, and what is the primary benefit of these applications?",
+        "options": [
+          "A. Autonomous driving, robotics, and natural language processing, with the primary benefit being the reduction of human labor costs",
+          "B. Autonomous driving, robotics, and natural language processing, with the primary benefit being enhanced human capabilities and improved quality of life",
+          "C. Financial trading, e-commerce, and medical diagnostics, with the primary benefit being increased profitability and efficiency",
+          "D. Social media management, content creation, and entertainment, with the primary benefit being increased user engagement and satisfaction"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "questions": [
+      {
+        "question": "Which of the following advancements has significantly contributed to the improved efficiency and lower cost of solar energy systems?",
+        "options": [
+          "A. Development of perovskite solar cells",
+          "B. Enhancements in wind turbine blade design",
+          "C. Expansion of floating offshore wind farms",
+          "D. Innovations in geothermal energy extraction"
+        ]
+      },
+      {
+        "question": "The introduction of floating offshore wind farms primarily aims to:",
+        "options": [
+          "A. Reduce the cost of wind energy by simplifying construction processes.",
+          "B. Harness wind resources in areas with shallow waters.",
+          "C. Enable the generation of wind energy in deeper waters, expanding potential sites.",
+          "D. Integrate solar energy systems with wind turbines for combined energy output."
+        ]
+      },
+      {
+        "question": "Germany's Energiewende policy is characterized by its focus on:",
+        "options": [
+          "A. Becoming the largest producer of solar panels globally.",
+          "B. Transitioning to a low-carbon, environmentally sound, reliable, and affordable energy supply.",
+          "C. Developing the most extensive network of offshore wind farms.",
+          "D. Achieving energy independence through nuclear energy investments."
+        ]
+      },
+      {
+        "question": "The economic benefits of renewable energy adoption, as highlighted in the text, include all of the following EXCEPT:",
+        "options": [
+          "A. Creation of jobs",
+          "B. Reduction in energy costs",
+          "C. Enhanced fossil fuel dependence",
+          "D. Stimulation of technological innovation and economic growth"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "questions": [
+      {
+        "question": "The positive impact of social media on mental health is primarily characterized by:",
+        "options": [
+          "A. Increased anxiety and depression",
+          "B. The formation of connections, support networks, and virtual communities",
+          "C. Heightened pressure to maintain an idealized online persona",
+          "D. Elevated levels of social comparison and cyberbullying"
+        ]
+      },
+     
+      {
+        "question": "Which factor is identified as a major contributor to the adverse mental health effects associated with social media use?",
+        "options": [
+          "A. Enhanced opportunities for self-expression and creativity",
+          "B. The pervasive threat of cyberbullying and the pressure of social comparison",
+          "C. Increased awareness of mental health issues",
+          "D. Development of support networks and virtual communities"
+        ]
+      },
+      {
+        "question": "According to research, social media addiction is often linked to:",
+        "options": [
+          "A. Improved daily productivity and sleep patterns",
+          "B. Enhanced physical activity and social engagement",
+          "C. Severe disruption of daily routines, sleep patterns, and productivity",
+          "D. Reduced anxiety and depression"
+        ]
+      },
+      {
+        "question": "Which strategy is recommended to mitigate the negative impacts of social media on mental health?",
+        "options": [
+          "A. Increasing screen time and daily social media usage",
+          "B. Avoiding discussions about the effects of social media on mental health",
+          "C. Limiting social media use to specific times, engaging in digital detoxes, and promoting positive content",
+          "D. Focusing on negative interactions to build resilience"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "questions": [
+      {
+        "question": "Which industry is identified as having a notably wider gender pay gap due to lower representation of women in high-paying roles and leadership positions?",
+        "options": [
+          "A. Healthcare",
+          "B. Education",
+          "C. Finance",
+          "D. Retail"
+        ]
+      },
+      {
+        "question": "What is one of the primary reasons for occupational segregation contributing to the gender pay gap?",
+        "options": [
+          "A. Equal representation of women in all fields",
+          "B. Overrepresentation of women in higher-paying jobs",
+          "C. Underrepresentation of women in high-paying, male-dominated fields",
+          "D. Continuous work experience for women"
+        ]
+      },
+      {
+        "question": "Which country is highlighted for its legislation requiring companies to demonstrate pay equity?",
+        "options": [
+          "A. United States",
+          "B. Germany",
+          "C. Sweden",
+          "D. Iceland"
+        ]
+      },
+      {
+        "question": "How do flexible work arrangements contribute to reducing the gender pay gap?",
+        "options": [
+          "A. By increasing part-time job opportunities",
+          "B. By allowing women to balance work and family obligations while advancing their careers",
+          "C. By promoting gender-based discrimination",
+          "D. By encouraging women to take more career breaks for caregiving"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "questions": [
+      {
+        "question": "Which ecosystem is notably impacted by rising sea temperatures and ocean acidification, leading to significant biodiversity loss?",
+        "options": [
+          "A. Rainforests",
+          "B. Coral reefs",
+          "C. Polar regions",
+          "D. Grasslands"
+        ]
+      },
+      {
+        "question": "Which species has experienced population declines due to disruptions in their migration patterns and breeding grounds caused by climate change?",
+        "options": [
+          "A. Polar bears",
+          "B. Golden toads",
+          "C. Penguins",
+          "D. Migratory birds"
+        ]
+      },
+      {
+        "question": "Which conservation strategy focuses on activities such as reforestation and wetland rehabilitation to bolster ecosystem resilience against climate change?",
+        "options": [
+          "A. Establishing protected areas",
+          "B. Implementing restoration projects",
+          "C. Promoting sustainable practices",
+          "D. Engaging in climate action"
+        ]
+      },
+      {
+        "question": "What are the primary drivers of climate change mentioned in the text, which lead to increased greenhouse gas emissions and consequent global warming?",
+        "options": [
+          "A. Natural volcanic activity and solar radiation variations",
+          "B. Anthropogenic activities including fossil fuel combustion, deforestation, and industrial processes",
+          "C. Natural oceanic currents and forest growth cycles",
+          "D. Seasonal weather patterns and agricultural cycles"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "questions": [
+      {
+        "question": "Which sector experienced a sharp decline due to travel restrictions and lockdowns during the COVID-19 pandemic?",
+        "options": [
+          "A. E-commerce",
+          "B. Healthcare",
+          "C. Travel and tourism",
+          "D. Finance"
+        ]
+      },
+      {
+        "question": "Which country adopted strict lockdown measures and rapidly scaled up testing and contact tracing, leading to a quick economic rebound?",
+        "options": [
+          "A. United States",
+          "B. Italy",
+          "C. China",
+          "D. Germany"
+        ]
+      },
+      {
+        "question": "Which long-term economic implication of the pandemic involves shifts in consumer behavior and accelerated digital transformation?",
+        "options": [
+          "A. Increased physical retail shopping",
+          "B. Reduced need for digital infrastructure",
+          "C. Changes in global supply chains",
+          "D. Decreased demand for online services"
+        ]
+      },
+      {
+        "question": "What recovery strategy can enhance productivity and support remote work and e-commerce in the long term?",
+        "options": [
+          "A. Investing in digital infrastructure and skills development",
+          "B. Promoting exclusive physical retail spaces",
+          "C. Reducing investments in technology",
+          "D. Strengthening traditional supply chains without diversification"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "questions": [
+      {
+        "question": "What milestone in space exploration marked humanity's first steps on the moon?",
+        "options": [
+          "A. Launch of Sputnik 1",
+          "B. Mars Rover missions",
+          "C. Apollo 11 mission",
+          "D. International Space Station (ISS) launch"
+        ]
+      },
+      {
+        "question": "Which space agency's Artemis program aims to return humans to the moon by 2024?",
+        "options": [
+          "A. ESA",
+          "B. SpaceX",
+          "C. NASA",
+          "D. ISRO"
+        ]
+      },
+      {
+        "question": "What technological advancement is critical for reducing travel time to distant space destinations?",
+        "options": [
+          "A. 3D printing",
+          "B. Ion thrusters",
+          "C. Advanced robotics",
+          "D. Closed-loop life support systems"
+        ]
+      },
+      {
+        "question": "Which space agency is collaborating on the Lunar Gateway, a space station orbiting the moon?",
+        "options": [
+          "A. NASA",
+          "B. ESA",
+          "C. SpaceX",
+          "D. ISRO"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "questions": [
+      {
+        "question": "Which machine learning approach involves training a model on labeled data where the input-output pairs are known?",
+        "options": [
+          "A. Unsupervised learning",
+          "B. Reinforcement learning",
+          "C. Supervised learning",
+          "D. Transfer learning"
+        ]
+      },
+      {
+        "question": "What is a common application of ML algorithms in the finance industry?",
+        "options": [
+          "A. Diagnosing diseases",
+          "B. Detecting fraudulent transactions",
+          "C. Interpreting medical images",
+          "D. Analyzing customer behavior"
+        ]
+      },
+      {
+        "question": "What future trend in machine learning aims to make models more interpretable and transparent?",
+        "options": [
+          "A. Federated learning",
+          "B. Explainable AI",
+          "C. AutoML",
+          "D. Transfer learning"
+        ]
+      },
+      {
+        "question": "Which machine learning algorithm is commonly used for reducing the dimensionality of data while retaining the most important features?",
+        "options": [
+          "A. Decision Trees",
+          "B. K-Means Clustering",
+          "C. Principal Component Analysis (PCA)",
+          "D. Q-Learning"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "questions": [
+      {
+        "question": "What is one potential ethical concern regarding the enhancement of human abilities through gene editing?",
+        "options": [
+          "A. Increased crop yields",
+          "B. Issues of fairness and consent",
+          "C. Development of resistant crops",
+          "D. Improved medical treatments"
+        ]
+      },
+      {
+        "question": "Which gene editing technology is mentioned as being used to correct genetic mutations in human embryos?",
+        "options": [
+          "A. TALENs",
+          "B. Zinc Finger Nucleases",
+          "C. CRISPR-Cas9",
+          "D. Gene therapy"
+        ]
+      },
+      {
+        "question": "How do regulatory approaches to gene editing differ between the United States and the European Union?",
+        "options": [
+          "A. The EU has no regulations.",
+          "B. The US has stricter regulations.",
+          "C. The FDA oversees gene therapy trials in the US, while the EU has stricter regulations.",
+          "D. Both regions have identical regulations."
+        ]
+      },
+      {
+        "question": "What is a potential application of gene editing in agriculture?",
+        "options": [
+          "A. Developing pest-resistant crops",
+          "B. Creating gluten-free wheat",
+          "C. Enhancing nutritional content",
+          "D. All of the above"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "questions": [
+      {
+        "question": "Which ancient civilization is credited with the development of the first known written language?",
+        "options": [
+          "A. Egyptians",
+          "B. Sumerians",
+          "C. Babylonians",
+          "D. Assyrians"
+        ]
+      },
+      {
+        "question": "What was the primary purpose of the Rosetta Stone?",
+        "options": [
+          "A. To commemorate a military victory",
+          "B. To honor a pharaoh",
+          "C. To serve as a decree from the priestly class",
+          "D. To display a work of art"
+        ]
+      },
+      {
+        "question": "Which language was inscribed on the Rosetta Stone, alongside ancient Greek and demotic script?",
+        "options": [
+          "A. Hieroglyphics",
+          "B. Cuneiform",
+          "C. Phoenician",
+          "D. Aramaic"
+        ]
+      },
+      {
+        "question": "Who deciphered the hieroglyphics on the Rosetta Stone?",
+        "options": [
+          "A. Jean-François Champollion",
+          "B. Thomas Young",
+          "C. Giovanni Battista Belzoni",
+          "D. Howard Carter"
+        ]
+      }
+    ]
+  }
+]
+
+      
