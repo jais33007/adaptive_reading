@@ -1,17 +1,34 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-import questions from '../data/questions.json'
-import './ComprehensionQuestions.css'
+import React, { useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import questions from '../data/questions.json';
+import { saveAs } from 'file-saver';
+import './ComprehensionQuestions.css';
+
 const ComprehensionQuestions = () => {
   const { id } = useParams();
-  const documentQuestions = questions.find((doc) => (doc.id) === parseInt(id));  
-  console.log(documentQuestions);
+  const documentQuestions = questions.find((doc) => doc.id === parseInt(id));
   const navigate = useNavigate();
+
+  const [responses, setResponses] = useState({});
 
   if (!documentQuestions) {
     return <div>No questions found for document with id {id}</div>;
   }
+
+  const handleOptionChange = (questionIndex, option) => {
+    setResponses((prevResponses) => ({
+      ...prevResponses,
+      [questionIndex]: option,
+    }));
+  };
+
+  const handleProceedToSurvey = () => {
+    const blob = new Blob([JSON.stringify(responses, null, 2)], { type: 'application/json' });
+    const filename = `ques_responses_${id}.json`;
+    saveAs(blob, filename);
+
+    navigate(`/survey/${id}`);
+  };
 
   return (
     <div className="comprehension-container">
@@ -26,6 +43,7 @@ const ComprehensionQuestions = () => {
                   type="radio"
                   name={`question_${index}`}
                   value={option}
+                  onChange={() => handleOptionChange(index, option)}
                 />
                 {option}
               </label>
@@ -34,7 +52,9 @@ const ComprehensionQuestions = () => {
         </div>
       ))}
       <div className="submit-button">
-        <button className="styled-button" onClick={() => navigate('/survey')}>Proceed to Survey</button>
+        <button className="styled-button" onClick={handleProceedToSurvey}>
+          Proceed to Survey
+        </button>
       </div>
     </div>
   );

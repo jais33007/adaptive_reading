@@ -1,0 +1,29 @@
+.dashboard-container {
+    position: fixed;
+    top: 1%;
+    left: 80%;
+    width: 200px;
+    height: 55px;
+    background-color: #ffffff;
+    line-height: 0.7cap;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it's above other content */
+    text-align: center; /* Center align text */
+  }
+  
+  .score-display {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .score-display.low {
+    color: red;
+  }
+  
+  .score-display.high {
+    color: green;
+  }
+  

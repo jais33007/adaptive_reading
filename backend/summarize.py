@@ -18,8 +18,8 @@ def summarize():
     response = openai.Completion.create(
     engine="davinci-002",
     prompt=paragraph,
-    max_tokens=50,
-    temperature=0.6, 
+    max_tokens=60,
+    temperature=0.2, 
     )
     
     summary = response.choices[0].text
