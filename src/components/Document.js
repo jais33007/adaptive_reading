@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useRef, useLayoutEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
-import ReactMarkdown from 'react-markdown';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import './Document.css';
 import axios from 'axios'; // For potential future external API interaction (optional)
 import { summarizeParagraph } from '../services/summarizationAPI'; // Import for backend API calls
 import { GazeView } from '../services/gaze_view';
-import { useNavigate } from 'react-router-dom';
 import EngagementDashboard from './EngagementDashboard';
 
 const Document = ({ engagementScore, eyeTrackingEnabled, toggleEyeTracking, updateEngagementScore }) => {
@@ -13,9 +11,9 @@ const Document = ({ engagementScore, eyeTrackingEnabled, toggleEyeTracking, upda
   const [documentContent, setDocumentContent] = useState('');
   const [selectedParagraph, setSelectedParagraph] = useState({ text: null, top: 0 });
   const [paragraphSummary, setParagraphSummary] = useState(''); // State to store paragraph summary
-  const navigate = useNavigate();
   const [score, setScore] = useState(0); // State for engagement score
-  const containerRef = useRef(null);
+  // const containerRef = useRef(null);
+  const navigate = useNavigate();
 
   const fetchMarkdownContent = async (id) => {
     try {
@@ -35,7 +33,10 @@ const Document = ({ engagementScore, eyeTrackingEnabled, toggleEyeTracking, upda
   const handleProceedToQuestionnaire = async () => {
     try {
       await axios.get('http://localhost:8765/recording/capture/'); // Replace with your recording API if needed
+      // await new Promise(resolve => setTimeout(resolve, 1000)); // Add a 1 second delay
       await axios.get('http://localhost:8765/recording/stop/'); // Replace with your recording API if needed
+
+      navigate(`/documents/${id}/questions`);
     } catch (error) {
       console.error('Proceed to Questionnaire Error:', error);
     }
@@ -70,19 +71,19 @@ const Document = ({ engagementScore, eyeTrackingEnabled, toggleEyeTracking, upda
     summarizeSelectedParagraph();
   }, [selectedParagraph.text]);
 
-  useLayoutEffect(() => {
-    if (containerRef.current) {
-      const rect = containerRef.current.getBoundingClientRect();
-      const coordinates = {
-        topLeft: { x: rect.left, y: rect.top },
-        topRight: { x: rect.right, y: rect.top },
-        bottomLeft: { x: rect.left, y: rect.bottom },
-        bottomRight: { x: rect.right, y: rect.bottom }
-      };
+  // useLayoutEffect(() => {
+  //   if (containerRef.current) {
+  //     const rect = containerRef.current.getBoundingClientRect();
+  //     const coordinates = {
+  //       topLeft: { x: rect.left, y: rect.top },
+  //       topRight: { x: rect.right, y: rect.top },
+  //       bottomLeft: { x: rect.left, y: rect.bottom },
+  //       bottomRight: { x: rect.right, y: rect.bottom }
+  //     };
   
-      //  console.log('Coordinates:', coordinates);
-    }
-  }, [containerRef]);
+  //     //  console.log('Coordinates:', coordinates);
+  //   }
+  // }, [containerRef]);
 
   useEffect(() => {
     // This effect will update the score state whenever the engagementScore prop changes
@@ -93,8 +94,7 @@ const Document = ({ engagementScore, eyeTrackingEnabled, toggleEyeTracking, upda
   return (
     <>
       <EngagementDashboard score={score} />
-      <div className="document-container" ref={containerRef}>
-        {/* <div className="paragraph-summaries" > */}
+      <div className="document-container">
           {documentContent.split('\n').map((paragraph, index) => (
             <p
               key={index}
@@ -104,11 +104,10 @@ const Document = ({ engagementScore, eyeTrackingEnabled, toggleEyeTracking, upda
               {index === 0 && <img src={`/images/${id}.png`} alt={`Image ${id}`} width="700" height="450" />}
             </p>
           ))}
-        {/* </div> */}
         <button className={`eye-tracking-button ${eyeTrackingEnabled ? 'enabled' : 'disabled'}`} onClick={toggleEyeTracking}>
           {eyeTrackingEnabled ? 'Disable Eye Tracking' : 'Enable Eye Tracking'}
         </button>
-        <Link to={`/documents/${id}/questions`} className="proceed-button" onClick={handleProceedToQuestionnaire}>
+        <Link to='#' className="proceed-button" onClick={handleProceedToQuestionnaire}>
           Proceed to Questionnaires
         </Link>
       </div>

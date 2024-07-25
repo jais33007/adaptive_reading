@@ -10,11 +10,7 @@ const Survey = () => {
 
   const surveyQuestions = [
     {
-      question: "On a scale of 1 to 7, how engaged were you while reading the document?",
-      scale: ["1", "2", "3", "4", "5", "6", "7"]
-    },
-    {
-      question: "Rate the overall intensity of your engagement with the document over time.",
+      question: "Rate the overall intensity of your engagement while reading the document",
       scale: ["1", "2", "3", "4", "5", "6", "7"]
     },
     {

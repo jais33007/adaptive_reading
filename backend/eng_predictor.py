@@ -83,8 +83,8 @@ def predict_engagement():
         bottom_bound = 650
 
          # Calculate average of the last 10 gaze points
-        avg_gaze_x = np.mean(gaze_x)
-        avg_gaze_y = np.mean(gaze_y)
+        avg_gaze_x = np.mean(gaze_x[-20:])
+        avg_gaze_y = np.mean(gaze_y[-20:])
 
         print ('Avg-gaze_x:', avg_gaze_x)
         print ('Avg-gaze_y:', avg_gaze_y)
