@@ -1,20 +1,27 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import './Survey.css'
+import { useNavigate, useParams } from "react-router-dom";
+import { saveAs } from "file-saver";
+import './Survey.css';
 
 const Survey = () => {
-  const [responses, setResponses] = useState([]);
+  const [responses, setResponses] = useState({});
   const navigate = useNavigate();
+  const { id } = useParams(); // Retrieve document ID from URL parameters
 
   const surveyQuestions = [
     {
-      question: "On a scale of 1 to 7, how engaged were you while reading the document?",
+      question: "Rate the overall intensity of your engagement while reading the document.",
       scale: ["1", "2", "3", "4", "5", "6", "7"]
     },
     {
-      question: "Rate the overall intensity of your engagement with the document over time.",
+      question: "Rate the overall level of comprehension or understanding while reading the document.",
       scale: ["1", "2", "3", "4", "5", "6", "7"]
     },
+    {
+      question: "Rate the helpfulness of the image in the document to understand the content.",
+      scale: ["1", "2", "3", "4", "5", "6", "7"]
+    },
+
     {
       question: "Rate the helpfulness of the summary in capturing the main points of the document.",
       scale: ["1", "2", "3", "4", "5", "6", "7"]
@@ -42,25 +49,21 @@ const Survey = () => {
   ];
 
   const handleOptionChange = (questionIndex, value) => {
-    const updatedResponses = [...responses];
-    updatedResponses[questionIndex] = value;
-    setResponses(updatedResponses);
+    setResponses((prevResponses) => ({
+      ...prevResponses,
+      [questionIndex]: value,
+    }));
   };
 
-  const saveResponsesAsCSV = () => {
-    const csvContent = "data:text/csv;charset=utf-8," +
-      responses.map((response, index) => `"Question ${index + 1}",${response}`).join("\n");
-    const encodedUri = encodeURI(csvContent);
-    const link = document.createElement("a");
-    link.setAttribute("href", encodedUri);
-    link.setAttribute("download", "survey_responses.csv");
-    document.body.appendChild(link);
-    link.click();
+  const saveResponsesAsJSON = () => {
+    const blob = new Blob([JSON.stringify(responses, null, 2)], { type: 'application/json' });
+    const filename = `survey_responses_${id}.json`; 
+    saveAs(blob, filename);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault(); // Prevent default form submission
-    saveResponsesAsCSV(); // Save responses as CSV
+    saveResponsesAsJSON(); // Save responses as JSON
     navigate("/documents"); // Navigate to documents page
   };
 
@@ -89,7 +92,7 @@ const Survey = () => {
           </div>
         ))}
         <div className="submit-button">
-        <button className="styled-button" type="submit">Submit and Save</button>
+          <button className="styled-button" type="submit">Submit and Save</button>
         </div>
       </form>
     </div>

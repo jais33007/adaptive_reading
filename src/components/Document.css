@@ -1,15 +1,15 @@
 /* Add your styling for the Document component */
 .document-container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
-    font-size: 21px;
-    line-height: 2.0;
-    margin-left: 180px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  font-size: 21px;
+  line-height: 2.0;
+  margin-left: 180px;
   }
   
   .document-content {
@@ -34,17 +34,7 @@
     margin-left: 10px; /* Adjust as needed */
   }
   
-  /* .paragraph-summary {
-    position: absolute;
-      left: 100px; 
-      margin-left: 1500px; 
-      margin-top: -2050px;
-      margin-right: 50px;
-      background-color: #7ea57c;
-      padding: 20px; 
-      border-radius: 30px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  } */
+
   
   .proceed-button {
     display: inline-block;

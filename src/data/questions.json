@@ -373,43 +373,44 @@
     "id": 9,
     "questions": [
       {
-        "question": "Which ancient civilization is credited with the development of the first known written language?",
+        "question": "What environmental impact is primarily associated with the use of toxic chemicals in textile production?",
         "options": [
-          "A. Egyptians",
-          "B. Sumerians",
-          "C. Babylonians",
-          "D. Assyrians"
+          "A. Water usage",
+          "B. Chemical pollution",
+          "C. Waste generation",
+          "D. Carbon emissions"
         ]
       },
       {
-        "question": "What was the primary purpose of the Rosetta Stone?",
+        "question": "Which brand is recognized for its use of recycled materials and advocacy for conservation?",
         "options": [
-          "A. To commemorate a military victory",
-          "B. To honor a pharaoh",
-          "C. To serve as a decree from the priestly class",
-          "D. To display a work of art"
+          "A. Stella McCartney",
+          "B. Eileen Fisher",
+          "C. Patagonia",
+          "D. H&M"
         ]
       },
       {
-        "question": "Which language was inscribed on the Rosetta Stone, alongside ancient Greek and demotic script?",
+        "question": "What future trend in sustainable fashion seeks to reduce the need for physical garments?",
         "options": [
-          "A. Hieroglyphics",
-          "B. Cuneiform",
-          "C. Phoenician",
-          "D. Aramaic"
+          "A. Circular fashion",
+          "B. Digital fashion",
+          "C. Eco-friendly materials",
+          "D. Upcycling"
         ]
       },
       {
-        "question": "Who deciphered the hieroglyphics on the Rosetta Stone?",
+        "question": "How does consumer awareness influence the sustainable fashion movement?",
         "options": [
-          "A. Jean-François Champollion",
-          "B. Thomas Young",
-          "C. Giovanni Battista Belzoni",
-          "D. Howard Carter"
+          "A. It decreases the demand for ethical products.",
+          "B. It leads to less transparency in supply chains.",
+          "C. It empowers consumers to make sustainable decisions.",
+          "D. It increases reliance on traditional materials."
         ]
       }
     ]
   }
+  
 ]
 
       

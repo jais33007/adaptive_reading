@@ -45,9 +45,10 @@ export const GazeView = ({ updateEngagementScore }) => {
     const x = parseFloat(d[1]) - window.screenX;
     const y = parseFloat(d[2]) - window.screenY - (window.outerHeight - window.innerHeight);
     const duration = parseFloat(d[3]);
+    const pupil_diameter = parseFloat(d[7])
 
-    fixations.push([timestamp, x, y, duration]);
-    if (fixations.length > 5) {
+    fixations.push([timestamp, x, y, duration, pupil_diameter]);
+    if (fixations.length > 90) {
       fixations.shift();
     }
 
@@ -106,7 +107,7 @@ export const GazeView = ({ updateEngagementScore }) => {
       
       if (fixations.length > 0) {
         const dataToSend = JSON.stringify({ fixationData: { fixations } });
-        console.log('Sending data to server:', dataToSend);
+        console.log('Sending data to server:');
   
         fetch('http://localhost:8000/predict_engagement', {
           mode: 'cors', // Allow CORS explicitly
@@ -129,7 +130,7 @@ export const GazeView = ({ updateEngagementScore }) => {
       } else {
         console.log('Fixations array is empty, not sending data to server.');
       }
-    }, 4000);
+    }, 3000);
   
     return () => {
       clearInterval(timer);
