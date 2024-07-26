@@ -14,6 +14,8 @@ def summarize():
     data = request.get_json()
     paragraph = data.get('paragraph')
     print (paragraph)
+
+    prompt = f"Summarize the following paragraph:\n\n{paragraph}"
     
     response = openai.Completion.create(
     engine="davinci-002",
