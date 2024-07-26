@@ -21,7 +21,7 @@ const FrontPage = () => {
   return (
     <div className="frontpage-container">
       <h1 className="frontpage-title">Passage Reading Experiment</h1>
-      <p className="frontpage-instructions">Follow the instructions below:</p>
+      <p className="frontpage-instructions">This experiment involves tracking the real-time gaze data to predict your engagement levels and summarizing the text based on your engagement level</p>
       <Link to="/documents" className="frontpage-button-link">
         <button onClick={handleStartExperiment}className="frontpage-button">Start Experiment</button>
       </Link>

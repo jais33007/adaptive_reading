@@ -5,6 +5,8 @@ import axios from 'axios'; // For potential future external API interaction (opt
 import { summarizeParagraph } from '../services/summarizationAPI'; // Import for backend API calls
 import { GazeView } from '../services/gaze_view';
 import EngagementDashboard from './EngagementDashboard';
+import { saveAs } from 'file-saver';
+
 
 const Document = ({ engagementScore, eyeTrackingEnabled, toggleEyeTracking, updateEngagementScore }) => {
   const { id } = useParams();
@@ -12,6 +14,8 @@ const Document = ({ engagementScore, eyeTrackingEnabled, toggleEyeTracking, upda
   const [selectedParagraph, setSelectedParagraph] = useState({ text: null, top: 0 });
   const [paragraphSummary, setParagraphSummary] = useState(''); // State to store paragraph summary
   const [score, setScore] = useState(0); // State for engagement score
+  const [summaryCount, setSummaryCount] = useState(0); // State to count the number of summaries
+
   // const containerRef = useRef(null);
   const navigate = useNavigate();
 
@@ -33,8 +37,12 @@ const Document = ({ engagementScore, eyeTrackingEnabled, toggleEyeTracking, upda
   const handleProceedToQuestionnaire = async () => {
     try {
       await axios.get('http://localhost:8765/recording/capture/'); // Replace with your recording API if needed
-      // await new Promise(resolve => setTimeout(resolve, 1000)); // Add a 1 second delay
       await axios.get('http://localhost:8765/recording/stop/'); // Replace with your recording API if needed
+
+      // Save summary count to a file
+      const summaryData = `Document ID: ${id}\nSummary Count: ${summaryCount}\n`;
+      const blob = new Blob([summaryData], { type: 'text/plain;charset=utf-8' });
+      saveAs(blob, `summary_count_${id}.txt`);
 
       navigate(`/documents/${id}/questions`);
     } catch (error) {
@@ -62,6 +70,7 @@ const Document = ({ engagementScore, eyeTrackingEnabled, toggleEyeTracking, upda
         try {
           const summary = await summarizeParagraph(selectedParagraph.text);
           setParagraphSummary(summary);
+          setSummaryCount(prevCount => prevCount + 1); // Increment summary count
         } catch (error) {
           console.error('Error summarizing paragraph:', error);
         }
