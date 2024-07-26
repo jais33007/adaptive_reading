@@ -13,19 +13,26 @@ openai.api_key = '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'
 def summarize():
     data = request.get_json()
     paragraph = data.get('paragraph')
-    print (paragraph)
+    print(paragraph)
 
-    prompt = f"Summarize the following paragraph:\n\n{paragraph}"
+    prompt = f"Summarize the following paragraph in a concise manner:\n\n{paragraph}\n\nSummary:"
     
     response = openai.Completion.create(
-    engine="davinci-002",
-    prompt=prompt,
-    max_tokens=60,
-    temperature=0.1, 
+        engine="davinci-002",
+        prompt=prompt,
+        max_tokens=70,  
+        temperature=0.3,  
+        n=3,  # Generate 3 completions
+        stop=None
     )
     
-    summary = response.choices[0].text
+    summaries = [choice.text.strip() for choice in response.choices]
+    summary = max(summaries, key=len)  # Pick the longest summary
 
+    # Remove any URLs or unwanted parts
+    summary = ' '.join(word for word in summary.split() if not word.startswith('http'))
+
+    # Ensure the summary ends with a complete sentence
     sentence_endings = [".", "!", "?"]
     last_sentence = summary.split(".")[-1].strip()
     
@@ -37,4 +44,4 @@ def summarize():
     return jsonify({'summary': summary})
 
 if __name__ == '__main__':
-    app.run(debug=True)  
+    app.run(debug=True)
