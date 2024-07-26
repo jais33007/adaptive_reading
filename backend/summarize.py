@@ -21,7 +21,7 @@ def summarize():
     engine="davinci-002",
     prompt=prompt,
     max_tokens=60,
-    temperature=0.2, 
+    temperature=0.1, 
     )
     
     summary = response.choices[0].text
