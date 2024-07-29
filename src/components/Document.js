@@ -44,10 +44,12 @@ const Document = ({ engagementScore, eyeTrackingEnabled, toggleEyeTracking, upda
       const blob = new Blob([summaryData], { type: 'text/plain;charset=utf-8' });
       saveAs(blob, `summary_count_${id}.txt`);
 
-      navigate(`/documents/${id}/questions`);
+      
     } catch (error) {
       console.error('Proceed to Questionnaire Error:', error);
     }
+
+    navigate(`/documents/${id}/questions`);
   };
 
   useEffect(() => {

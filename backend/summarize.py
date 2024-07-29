@@ -15,12 +15,12 @@ def summarize():
     paragraph = data.get('paragraph')
     print(paragraph)
 
-    prompt = f"Summarize the following paragraph in a concise manner:\n\n{paragraph}\n\nSummary:"
+    prompt = f"Summarize this paragraph:\n\n{paragraph}\n\nSummary:"
     
     response = openai.Completion.create(
         engine="davinci-002",
         prompt=prompt,
-        max_tokens=70,  
+        max_tokens=50,  
         temperature=0.3,  
         n=3,  # Generate 3 completions
         stop=None
