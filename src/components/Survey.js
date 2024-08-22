@@ -39,7 +39,7 @@ const Survey = () => {
       scale: ["1", "2", "3", "4", "5", "6", "7"]
     },
     {
-      question: "Rate your confidence in the system's ability to utilize your gaze data effectively for generating tailored summaries.",
+      question: "Rate your self confidence in answering the task based questionnaire. ",
       scale: ["1", "2", "3", "4", "5", "6", "7"]
     },
     {

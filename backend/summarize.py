@@ -15,19 +15,19 @@ def summarize():
     paragraph = data.get('paragraph')
     print(paragraph)
 
-    prompt = f"Summarize this paragraph:\n\n{paragraph}\n\nSummary:"
+    prompt = f"Summarize this given text without any additional information other than the given text:\n{paragraph}"
     
-    response = openai.Completion.create(
-        engine="davinci-002",
-        prompt=prompt,
-        max_tokens=50,  
-        temperature=0.3,  
-        n=3,  # Generate 3 completions
-        stop=None
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": prompt}
+        ],
+        max_tokens=60,
+        temperature=0.5
     )
     
-    summaries = [choice.text.strip() for choice in response.choices]
-    summary = max(summaries, key=len)  # Pick the longest summary
+    summary = response.choices[0].message['content'].strip()
 
     # Remove any URLs or unwanted parts
     summary = ' '.join(word for word in summary.split() if not word.startswith('http'))
