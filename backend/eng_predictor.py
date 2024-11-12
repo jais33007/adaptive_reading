@@ -94,12 +94,10 @@ def predict_engagement():
             engagement_score = 0
 
         
-
-        # # Use fixation duration to adjust engagement score
         # if np.mean(fixation_duration) < 100:
         #     engagement_score = 0
 
-        # Additional logic: use pupil diameter
+        
         # if np.mean(pupil_diameter) < 2.5:  # Example threshold
         #     engagement_score = 0
 

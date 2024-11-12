@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app, origins=['http://localhost:3000'])
 
 # Set your OpenAI API key here
-openai.api_key = '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'
+openai.api_key = 'XXX'
 
 @app.route('/summarize', methods=['POST'])
 def summarize():
@@ -24,7 +24,7 @@ def summarize():
             {"role": "user", "content": prompt}
         ],
         max_tokens=60,
-        temperature=0.5
+        temperature=0.3
     )
     
     summary = response.choices[0].message['content'].strip()
